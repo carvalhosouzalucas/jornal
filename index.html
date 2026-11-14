@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Notícias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_jornal.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jornal online de Itororó — notícias, equipe e publicações.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jornal de Itororó">
+    <meta property="og:description" content="Notícias e informação para a comunidade de Itororó - BA.">
+    <meta property="og:image" content="cavalo_logo.jfif">
+    <meta property="og:locale" content="pt_BR">
+</head>
+
+<body>
+
+    <div id="barra_progresso" aria-hidden="true"></div>
+
+    <header>
+        <div id="barra_data"></div>
+
+        <div id="cabecalho_topo">
+            <div id="logo_container">
+                <img id="logo" src="cavalo_logo.jfif" alt="Logo: cavalo empinando, Jornal de Itororó">
+            </div>
+
+            <h1 class="sr-only">Jornal de Itororó</h1>
+
+            <div id="anuncios_topo">
+                <div class="espaco_anuncio">Publicidade 125x60</div>
+                <div class="espaco_anuncio">Publicidade 125x60</div>
+                <div class="espaco_anuncio">Publicidade 125x60</div>
+            </div>
+        </div>
+
+        <div id="barra_nav">
+            <nav id="navegacao" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#feed">Feed de notícias</a></li>
+                    <li><a href="#equipe">A equipe</a></li>
+                    <li><a href="#conheca">Conheça a cidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a id="login_botao" href="login_do_adm.html">Login</a>
+        </div>
+
+        <div id="barra_busca">
+            <form class="form_busca" role="search" action="#" method="get">
+                <label class="sr-only" for="campo_busca">Buscar notícias</label>
+                <input type="search" id="campo_busca" name="q" placeholder="Buscar notícias..."
+                       aria-label="Buscar notícias">
+                <button type="submit" aria-label="Pesquisar">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                         stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="equipe">
+            <h2>Nossa equipe</h2>
+
+            <p class="equipe_intro">O Jornal de Itororó é mantido por uma pequena equipe de jornalistas e
+                colaboradores dedicados a cobrir o que acontece na cidade e na região com apuração cuidadosa.
+                Da política municipal aos eventos culturais, cada matéria publicada aqui passa pelas mãos de quem
+                você conhece abaixo.</p>
+
+            <div class="lista_equipe">
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Ana Ferreira"
+                         loading="lazy">
+                    <h3 class="nome_membro">Ana Ferreira</h3>
+                    <p class="cargo_membro">Editora-chefe</p>
+                    <p class="bio_membro">Jornalista formada há 8 anos, cobre política e economia local desde a
+                        fundação do jornal. Responsável pela linha editorial e pela apuração das matérias de maior
+                        repercussão na cidade.</p>
+                </div>
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Rafael Costa"
+                         loading="lazy">
+                    <h3 class="nome_membro">Rafael Costa</h3>
+                    <p class="cargo_membro">Repórter de cultura</p>
+                    <p class="bio_membro">Responsável pela cobertura de eventos culturais e entrevistas com artistas
+                        da região. Também assina a coluna semanal sobre a agenda cultural de Itororó e cidades
+                        vizinhas.</p>
+                </div>
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Juliana Matos"
+                         loading="lazy">
+                    <h3 class="nome_membro">Juliana Matos</h3>
+                    <p class="cargo_membro">Repórter policial</p>
+                    <p class="bio_membro">Cobre segurança pública e acompanha as ações da polícia na cidade de
+                        Itororó. Mantém contato direto com as delegacias da região para apurar os casos com rapidez
+                        e precisão.</p>
+                </div>
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Marcos Almeida"
+                         loading="lazy">
+                    <h3 class="nome_membro">Marcos Almeida</h3>
+                    <p class="cargo_membro">Repórter de economia</p>
+                    <p class="bio_membro">Acompanha o mercado agrícola da região, com foco na produção de café, e
+                        cobre os impactos econômicos das decisões públicas locais sobre o comércio de Itororó.</p>
+                </div>
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Beatriz Nogueira"
+                         loading="lazy">
+                    <h3 class="nome_membro">Beatriz Nogueira</h3>
+                    <p class="cargo_membro">Repórter internacional</p>
+                    <p class="bio_membro">Traduz e contextualiza notícias internacionais com relevância para a
+                        comunidade local, conectando o que acontece no mundo aos interesses dos leitores de
+                        Itororó.</p>
+                </div>
+
+                <div class="membro_equipe">
+                    <img class="foto_membro" src="https://via.placeholder.com/150" alt="Foto de Diego Fernandes"
+                         loading="lazy">
+                    <h3 class="nome_membro">Diego Fernandes</h3>
+                    <p class="cargo_membro">Editor de fotografia e diagramação</p>
+                    <p class="bio_membro">Responsável pelas imagens que acompanham as matérias e pela diagramação
+                        das edições especiais do jornal, cuidando da identidade visual de cada publicação.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="conheca">
+            <h2>Conheça a cidade</h2>
+
+            <figure>
+                <img id="placa" src="itororo_placa.webp" alt="Placa de entrada da cidade de Itororó"
+                     loading="lazy">
+                <figcaption>Entrada da cidade de Itororó, na Bahia.</figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.</p>
+
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum. Curabitur pretium tincidunt lacus, sed porttitor metus ullamcorper eget. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+
+            <p>Nulla facilisi. Aenean ac massa ac arcu bibendum tincidunt. Mauris blandit aliquet elit, eget
+                tincidunt nibh pulvinar a. Proin eget tortor risus. Praesent sapien massa, convallis a
+                pellentesque nec, egestas non nisi.</p>
+
+            <figure>
+                <img id="praca" src="praca.webp" alt="Praça da cidade de Itororó" loading="lazy">
+                <figcaption>Praça central de Itororó.</figcaption>
+            </figure>
+
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo.</p>
+
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet.</p>
+        </section>
+
+        <section id="contato">
+            <h2 id="contato_h1">Contato</h2>
+
+            <div class="contato_info">
+                <p><strong>Endereço:</strong> Rua Coronel Pedro Dantas, 142 — Centro, Itororó - BA</p>
+                <p><strong>Telefone:</strong> (77) 3484-2210</p>
+                <p><strong>WhatsApp:</strong> (77) 99812-4567</p>
+                <p><strong>E-mail:</strong> contato@jornalitororo.com.br</p>
+                <p><strong>Horário de atendimento:</strong> Segunda a sexta, das 8h às 17h</p>
+            </div>
+        </section>
+
+        <section id="feed">
+
+            <div class="feed_corpo">
+
+                <aside class="coluna_opiniao" aria-label="Coluna de opinião">
+                    <h2 class="opiniao_titulo_coluna">Opinião</h2>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">O silêncio da Câmara sobre o abastecimento de
+                            água</a></h3>
+                        <p class="opiniao_autor">Ana Ferreira, editora-chefe</p>
+                        <p class="opiniao_trecho">Já faz três semanas que o problema foi levantado em reunião
+                            pública, e nenhum vereador se pronunciou sobre um cronograma de solução.</p>
+                    </article>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">Por que o Festival de Inverno precisa de mais apoio
+                            da prefeitura</a></h3>
+                        <p class="opiniao_autor">Rafael Costa, repórter de cultura</p>
+                        <p class="opiniao_trecho">O evento cresce a cada ano, mas ainda depende quase inteiramente
+                            de patrocínio privado e do esforço voluntário dos organizadores.</p>
+                    </article>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">Segurança no centro: patrulhamento não resolve
+                            sozinho</a></h3>
+                        <p class="opiniao_autor">Juliana Matos, repórter policial</p>
+                        <p class="opiniao_trecho">Mais viaturas nas ruas ajudam, mas sem investimento em iluminação
+                            pública o problema só se desloca para outros bairros.</p>
+                    </article>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">Eleição para governador passa longe das pautas do
+                            interior</a></h3>
+                        <p class="opiniao_autor">Marcos Almeida, repórter de economia</p>
+                        <p class="opiniao_trecho">Com a corrida ao governo do estado movimentando as agendas dos
+                            candidatos pelo interior, cidades como Itororó seguem esperando propostas concretas
+                            para a economia local, não só visitas de campanha.</p>
+                    </article>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">O preço do café no mercado internacional chegou à
+                            nossa feira</a></h3>
+                        <p class="opiniao_autor">Beatriz Nogueira, repórter internacional</p>
+                        <p class="opiniao_trecho">A alta global da commodity, puxada pela quebra de safra em outros
+                            países produtores, já aparece no bolso de quem compra o pacote de café no mercado
+                            municipal.</p>
+                    </article>
+
+                    <article class="artigo_opiniao">
+                        <h3 class="opiniao_titulo"><a href="#">Diagramar uma cidade pequena também é contar sua
+                            história</a></h3>
+                        <p class="opiniao_autor">Diego Fernandes, editor de fotografia e diagramação</p>
+                        <p class="opiniao_trecho">Escolher qual foto estampa a capa do jornal é, antes de tudo,
+                            decidir o que a cidade vai lembrar daquela semana.</p>
+                    </article>
+                </aside>
+
+                <div class="feed_principal">
+
+                    <label class="sr-only" for="filtro_categoria">Filtrar notícias por categoria</label>
+                    <select id="filtro_categoria" aria-label="Filtrar notícias por categoria">
+                        <option value="todas">Todas as categorias</option>
+                        <option value="politica">Política</option>
+                        <option value="economia">Economia</option>
+                        <option value="cultura">Cultura</option>
+                        <option value="crime">Crime</option>
+                        <option value="internacional">Internacional</option>
+                    </select>
+
+                    <a class="noticia_destaque" data-categoria="politica" href="pagina_noticia.html?id=destaque-veto">
+                        <img class="noticia_destaque_capa" src="imagens_noticias/veto.jpeg"
+                             alt="Imagem de capa: Câmara dos Deputados derruba veto presidencial"
+                             loading="lazy">
+                        <div class="noticia_destaque_info">
+                            <span class="noticia_categoria">Política</span>
+                            <h2 class="noticia_destaque_titulo">Câmara dos deputados derruba veto do presidente em
+                                votação apertada</h2>
+                            <p class="noticia_data">Publicado em 09 de outubro de 2026</p>
+                        </div>
+                    </a>
+
+                    <div class="lista_noticias">
+
+                        <a class="noticia" data-categoria="internacional" href="pagina_noticia.html?id=cupula-comercial">
+                            <img class="noticia_capa" src="imagens_noticias/cupula_comercial.jfif"
+                                 alt="Imagem de capa: Cúpula discute acordo comercial" loading="lazy">
+                            <span class="noticia_categoria">Internacional</span>
+                            <h3 class="noticia_titulo">Cúpula discute acordo comercial entre países da América do
+                                Sul</h3>
+                            <p class="noticia_data">Publicado em 17 de outubro de 2026</p>
+                        </a>
+
+                        <a class="noticia" data-categoria="politica"
+                           href="pagina_noticia.html?id=projeto-infraestrutura">
+                            <img class="noticia_capa" src="imagens_noticias/camara_aprova.jfif"
+                                 alt="Imagem de capa: Câmara aprova projeto de infraestrutura" loading="lazy">
+                            <span class="noticia_categoria">Política</span>
+                            <h3 class="noticia_titulo">Câmara aprova novo projeto de infraestrutura regional</h3>
+                            <p class="noticia_data">Publicado em 17 de outubro de 2026</p>
+                        </a>
+
+                        <a class="noticia" data-categoria="economia" href="pagina_noticia.html?id=preco-cafe">
+                            <img class="noticia_capa" src="imagens_noticias/cafe.jfif"
+                                 alt="Imagem de capa: Preço do café sobe" loading="lazy">
+                            <span class="noticia_categoria">Economia</span>
+                            <h3 class="noticia_titulo">Preço do café sobe após quebra de safra</h3>
+                            <p class="noticia_data">Publicado em 18 de outubro de 2026</p>
+                        </a>
+
+                        <a class="noticia" data-categoria="cultura" href="pagina_noticia.html?id=exposicao-arte">
+                            <img class="noticia_capa"
+                                 src="imagens_noticias/Exposicao_de_Artefactos_indigenas.png"
+                                 alt="Imagem de capa: Exposição de arte indígena" loading="lazy">
+                            <span class="noticia_categoria">Cultura</span>
+                            <h3 class="noticia_titulo">Exposição de arte indígena chega a Itororó</h3>
+                            <p class="noticia_data">Publicado em 18 de outubro de 2026</p>
+                        </a>
+
+                        <a class="noticia" data-categoria="crime" href="pagina_noticia.html?id=operacao-furto">
+                            <img class="noticia_capa" src="imagens_noticias/operacao.jfif"
+                                 alt="Imagem de capa: Operação prende suspeitos de furto" loading="lazy">
+                            <span class="noticia_categoria">Crime</span>
+                            <h3 class="noticia_titulo">Operação prende suspeitos de furto a comércio local</h3>
+                            <p class="noticia_data">Publicado em 19 de outubro de 2026</p>
+                        </a>
+
+                        <a class="noticia" data-categoria="internacional" href="pagina_noticia.html?id=ajuda-humanitaria">
+                            <img class="noticia_capa"
+                                 src="imagens_noticias/Ajuda_Humanitaria_nas_Cheias.png"
+                                 alt="Imagem de capa: Ajuda humanitária internacional" loading="lazy">
+                            <span class="noticia_categoria">Internacional</span>
+                            <h3 class="noticia_titulo">Organização internacional anuncia ajuda humanitária à
+                                região</h3>
+                            <p class="noticia_data">Publicado em 19 de outubro de 2026</p>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape_conteudo">
+            <p class="rodape_marca">Jornal de Itororó</p>
+            <p class="rodape_texto">Notícias e informação para a comunidade de Itororó - BA.</p>
+
+            <ul class="rodape_redes">
+                <li>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.8 6.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.3 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1a4.1 4.1 0 0 0 3.3 4 4.2 4.2 0 0 1-1.8.1 4.1 4.1 0 0 0 3.8 2.9A8.3 8.3 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"/>
+                        </svg>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.6-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z"/>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.5 12a31 31 0 0 0-.5-4.8zM9.8 15.3V8.7l6 3.3-6 3.3z"/>
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="rodape_copyright">&copy; 2026 Jornal de Itororó. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="ADM_js.js"></script>
+    <script src="home_jornal.js"></script>
+    <script src="jornal_JS.js"></script>
+
+</body>
+
+</html>
